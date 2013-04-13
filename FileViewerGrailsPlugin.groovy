@@ -2,7 +2,7 @@
 
 class FileViewerGrailsPlugin {
     // the plugin version
-    def version = "0.3.1-SNAPSHOT"
+    def version = "0.3.1.SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.1 > *"
     // the other plugins this plugin depends on
@@ -10,7 +10,9 @@ class FileViewerGrailsPlugin {
 
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-            "grails-app/views/error.gsp"
+            "grails-app/views/error.gsp",
+            "web-app/**",
+            "scripts/**"
     ]
 
     def author = "Himanshu Seth, Fabien Benichou"

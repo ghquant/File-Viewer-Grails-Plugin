@@ -1,10 +1,7 @@
+<%@page defaultCodec="none" %>
 <g:if test="${filePath}">
     <div class="fileContents">
-        <pre class="codeExample">
-            <code>
-                ${fileContents}
-            </code>
-        </pre>
+        <pre class="codeExample"><code>${fileContents}</code></pre>
     </div>
 
     <div class="downloadLink">
