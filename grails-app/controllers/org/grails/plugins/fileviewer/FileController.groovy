@@ -58,7 +58,7 @@ class FileController {
         file.eachFile {File subFile ->
             locations << subFile.absolutePath
         }
-        return locations
+        return locations.sort()
     }
 
     /**
